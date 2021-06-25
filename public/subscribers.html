@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <title>Subscribers</title>
+</head>
+<body>
+    <div class="ui center aligned container">
+        <h1 class="ui center aligned icon header">
+            <i class="circular teal envelope outline icon"></i>
+            Are you on the list?
+          </h1>
+        <p>Be the first 5 to subscribe for early access to my shop!</p>
+        <a href="/subscribe"><button class="ui teal basic button">
+            <i class="pen square icon"></i>
+                Subscribe
+        </button></a>
+        <a href="/"><button class="ui teal basic button">
+            <i class="home icon"></i>
+                Home
+        </button></a>
+    </div>
+    <div class="ui center aligned container">
+        <h1>Top 5 Subscribers!</h1>
+    </div>
+    <div class="ui huge horizontal list" id="top-subscribers"></div>
+    <div class="ui center aligned container">
+        <h1>More Awesome Subscribers!</h1>
+    </div>
+    <div class="ui huge horizontal list" id="other-subscribers"></div>
+    <script src="assets/subscribers.js"></script>
+</body>
+</html>

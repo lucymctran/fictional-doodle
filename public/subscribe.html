@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <title>Subscribe Form</title>
+</head>
+<body>
+    <div class="ui center aligned container">
+        <h1 class="ui center aligned icon header">
+            <i class="circular teal envelope outline icon"></i>
+            Subscribe!
+          </h1>
+        <p>Be the first 5 to subscribe for early access to my shop!</p>
+        <a href="/subscribers"><button class="ui teal basic button">
+            <i class="newspaper outline icon"></i>
+                View subscribers
+        </button></a>
+        <a href="/"><button class="ui teal basic button">
+            <i class="home icon"></i>
+                Home
+        </button></a>
+    </div>
+    <div class="ui container">
+    <form class="ui form">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" name="first-name" placeholder="First Name" id="first-name">
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" name="last-name" placeholder="Last Name" id="last-name">
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email" id="email">
+          </div>
+        <button class="ui button submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="ui container">
+      <div class="ui hidden content success message" id="success">
+        <div class="header">Form Completed</div>
+        <p>You're all signed up for the newsletter.</p>
+      </div>
+    </div>
+    <div class="ui container">
+      <div class="ui hidden content warning message" id="other">
+        <div class="header">Subscribed!</div>
+        <ul class="list">
+          <li>You're subscribed, but someone beat you in the top 5 subscriber!</li>
+        </ul>
+      </div>
+    </div>
+    <script src="assets/subscribe.js"></script>
+</body>
+</html>
